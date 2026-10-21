@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "world_id": "warehouse_demo_001",
+  "scene_family": "warehouse",
+  "history_seed": 2026,
+  "time_unit": "days_since_world_origin",
+  "coordinate_frame": "world_enu",
+  "width_m": 20.0,
+  "height_m": 20.0,
+  "time_days": 0.0,
+  "objects": [
+    {
+      "object_uid": "shelf_001",
+      "object_class": "shelf",
+      "asset_key": "warehouse/shelf_basic",
+      "region_id": "storage_a",
+      "geometry_version": 1,
+      "birth_time_days": 0.0,
+      "state": "present",
+      "pose": {"x_m": 4.0, "y_m": 5.0, "z_m": 0.0, "yaw_rad": 0.0},
+      "event_rates_per_day": {"move": 0.001, "remove": 0.0001, "replace": 0.0001, "modify": 0.0001}
+    },
+    {
+      "object_uid": "pallet_001",
+      "object_class": "pallet",
+      "asset_key": "warehouse/pallet_basic",
+      "region_id": "storage_a",
+      "geometry_version": 1,
+      "birth_time_days": 0.0,
+      "state": "present",
+      "pose": {"x_m": 5.0, "y_m": 7.0, "z_m": 0.0, "yaw_rad": 1.57},
+      "event_rates_per_day": {"move": 0.04, "remove": 0.005, "replace": 0.001, "modify": 0.0}
+    },
+    {
+      "object_uid": "forklift_001",
+      "object_class": "forklift",
+      "asset_key": "warehouse/forklift_basic",
+      "region_id": "aisle_1",
+      "geometry_version": 1,
+      "birth_time_days": 0.0,
+      "state": "present",
+      "pose": {"x_m": 10.0, "y_m": 10.0, "z_m": 0.0, "yaw_rad": 0.0},
+      "event_rates_per_day": {"move": 0.12, "remove": 0.0005, "replace": 0.0001, "modify": 0.0001}
+    },
+    {
+      "object_uid": "box_001",
+      "object_class": "box",
+      "asset_key": "warehouse/box_basic",
+      "region_id": "storage_b",
+      "geometry_version": 1,
+      "birth_time_days": 0.0,
+      "state": "present",
+      "pose": {"x_m": 14.0, "y_m": 4.0, "z_m": 0.0, "yaw_rad": 0.0},
+      "event_rates_per_day": {"move": 0.025, "remove": 0.015, "replace": 0.002, "modify": 0.001}
+    },
+    {
+      "object_uid": "partition_001",
+      "object_class": "partition_wall",
+      "asset_key": "warehouse/partition_basic",
+      "region_id": "storage_b",
+      "geometry_version": 1,
+      "birth_time_days": 0.0,
+      "state": "present",
+      "pose": {"x_m": 16.0, "y_m": 11.0, "z_m": 0.0, "yaw_rad": 0.0},
+      "event_rates_per_day": {"move": 0.0, "remove": 0.00005, "replace": 0.00005, "modify": 0.00005}
+    }
+  ]
+}
