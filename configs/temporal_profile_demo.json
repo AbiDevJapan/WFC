@@ -1,0 +1,28 @@
+{
+  "temporal_profile_version": "0.1.0",
+  "default_shape": 1.0,
+  "class_shapes": {
+    "shelf": {"move": 1.3, "remove": 2.0, "replace": 1.7, "modify": 1.4},
+    "pallet": {"move": 0.8, "remove": 1.2},
+    "box": {"move": 0.8, "remove": 1.3},
+    "forklift": {"move": 0.7, "remove": 1.2},
+    "partition_wall": {"remove": 2.0, "modify": 2.0}
+  },
+  "object_shapes": {},
+  "regimes": [
+    {
+      "name": "storage_a_reorganization",
+      "region_id": "storage_a",
+      "start_day": 45,
+      "end_day": 95,
+      "multipliers": {"move": 4.0, "remove": 2.5, "replace": 1.0, "modify": 2.0}
+    },
+    {
+      "name": "storage_b_renovation",
+      "region_id": "storage_b",
+      "start_day": 150,
+      "end_day": 210,
+      "multipliers": {"move": 1.0, "remove": 1.5, "replace": 3.0, "modify": 6.0}
+    }
+  ]
+}
